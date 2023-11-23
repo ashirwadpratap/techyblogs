@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+<head>
+  <meta charset="utf-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="icon" href="/favicon.ico">
+
+  <title>
+     - My New Hugo Site
+  </title>
+
+  <meta name="description" content="" /><meta name="generator" content="Hugo 0.120.3">
+
+  <link rel="stylesheet" href="https://example.org/css/main.css" />
+
+  
+  
+
+  <meta property="og:title" content="" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://example.org/" />
+
+
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content=""/>
+
+
+  <meta itemprop="name" content="">
+<meta itemprop="description" content="">
+
+  <meta itemprop="name" content="">
+<meta itemprop="description" content="">
+</head><body class="flex relative h-full min-h-screen"><aside
+  class="will-change-transform transform transition-transform -translate-x-full absolute top-0 left-0 md:relative md:translate-x-0 w-3/4 md:basis-60 h-full min-h-screen p-3 bg-slate-50 dark:bg-slate-800 border-r border-slate-200 dark:border-slate-700 flex flex-col gap-2.5 z-20 sidebar flex-shrink-0">
+  <p class="font-bold mb-5 flex items-center gap-2">
+    <button aria-label="Close sidebar"
+      class="md:hidden menu-trigger-close p-1 rounded text-slate-800 dark:text-slate-50 hover:bg-slate-200 dark:hover:bg-slate-700"><svg class="h-6 w-6" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+  fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" />
+  <line x1="18" y1="6" x2="6" y2="18" />
+  <line x1="6" y1="6" x2="18" y2="18" />
+</svg></button>
+    <a href="https://example.org/" class="px-2">
+      <span>My New Hugo Site</span>
+    </a>
+    <button aria-label="Toggle dark mode"
+      class="dark-mode-toggle p-2 rounded border dark:border-slate-700 hover:bg-slate-200 dark:hover:bg-slate-700"><svg class="h-4 w-4" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+  fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" />
+  <circle cx="12" cy="12" r="4" />
+  <path d="M3 12h1M12 3v1M20 12h1M12 20v1M5.6 5.6l.7 .7M18.4 5.6l-.7 .7M17.7 17.7l.7 .7M6.3 17.7l-.7 .7" />
+</svg></button>
+  </p>
+
+  
+  <ul class="list-none flex flex-col gap-1">
+    
+  </ul>
+
+  <div class="flex-1"></div>
+
+  
+
+  <ul class="list-none flex flex-wrap justify-center gap-1 pt-2 border-t border-slate-200 dark:border-slate-600">
+    
+  </ul>
+</aside>
+
+<div
+  class="fixed bg-slate-700 bg-opacity-5 transition duration-200 ease-in-out inset-0 z-10 pointer-events-auto md:hidden left-0 top-0 w-full h-full hidden menu-overlay">
+</div>
+
+<button aria-label="Toggle Sidebar"
+  class="md:hidden absolute top-3 left-3 z-10 menu-trigger p-1 rounded text-slate-800 dark:text-slate-50 hover:bg-slate-100"><svg class="h-6 w-6" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+  fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" />
+  <line x1="4" y1="6" x2="20" y2="6" />
+  <line x1="4" y1="12" x2="20" y2="12" />
+  <line x1="4" y1="18" x2="16" y2="18" />
+</svg></button>
+
+
+<main class="h-screen overflow-y-auto w-full">
+  <div class="px-6 py-20 w-full lg:w-[580px] mx-auto prose dark:prose-invert h-fit prose-img:mx-auto">
+    <h1 id="how-to-fix-error-__dirname-is-not-described-in-es-module-scope-in-node">How to fix error &ldquo;__dirname is not described in ES module scope&rdquo; in Node</h1>
+<h2 id="what-is-the-error-message--__dirname-isnt-defined-in-es-module-scope--in-node">What is the error message &quot; __dirname isn&rsquo;t defined in ES module scope &quot; in Node?</h2>
+<p>The blunders message &ldquo;__dirname is not defined in ES module scope&rdquo; means that you are attempting to apply the __dirnamevariable in an ES module, but the __dirname variable isn&rsquo;t always available in ES modules with the aid of  default.</p>
+<h2 id="why-is-the-__dirname-variable-no-longer-available-in-es-modules-with-the-aid-of-default">Why is the __dirname variable no longer available in ES modules with the aid of default?</h2>
+<p>The __dirname variable is a CommonJS global variable that returns the listing call of the modern script. ES modules are a more recent module layout that is designed to be more modular and reusable. ES modules no longer have the right of entry to CommonJS international variables by way of default.</p>
+<h2 id="how-to-fix-the-error-message-__dirname-isnt-described-in-es-module-scope">How to fix the error message &ldquo;__dirname isn&rsquo;t described in ES module scope&rdquo;</h2>
+<p>There are two approaches to repair the mistake message &ldquo;__dirname isn&rsquo;t described in ES module scope&rdquo;:</p>
+<ul>
+<li>
+<p>Use the import.Meta.Url property to get the URL of the current module. You can then use the direction. Dirname() technique to get the directory call of the cutting-edge module.</p>
+</li>
+<li>
+<p>For instance, the following code shows the way to get the listing name of the modern module using the import.Meta.Urlproperty and the route. Dirname() approach:</p>
+</li>
+<li>
+<p>JavaScript</p>
+</li>
+<li>
+<p>import path from &lsquo;path&rsquo;;</p>
+</li>
+<li>
+<p>const __dirname = direction.Dirname(import.Meta.Url);</p>
+</li>
+<li>
+<p>Use a 3rd-party bundle to get the __dirnamevariable. There are a few 0.33-party programs that offer the __dirnamevariable for ES modules. One famous package deal is referred to as not unusual-es.</p>
+</li>
+</ul>
+<h3 id="to-use-the-commonplace-es-bundle-you-can-set-up-it-the-usage-of-the-subsequent-command">To use the commonplace-es bundle, you can set up it the usage of the subsequent command:</h3>
+<ul>
+<li>
+<p>npm deploy commonplace-es</p>
+</li>
+<li>
+<p>Once the package deal is established, you can import it into your code and use the getGlobals() characteristic to get the __dirnamevariable.</p>
+</li>
+<li>
+<p>For example, the subsequent code indicates how to get the __dirnamevariable using the not unusual-es bundle:</p>
+</li>
+<li>
+<p>JavaScript</p>
+</li>
+<li>
+<p>import  getGlobals  from &lsquo;common-es&rsquo;;</p>
+</li>
+<li>
+<p>const __dirname getGlobals().__dirname;</p>
+</li>
+<li>
+<p>To fix error “_ _dirname is not defined in Es module scope “ in node</p>
+</li>
+</ul>
+<ol>
+<li>Use CommonJS Modules:
+The easiest manner to resolve this mistake is to change from the use of ES modules to CommonJS modules through changing the report extension from &ldquo;.Mjs&rdquo; to &ldquo;.Cjs&rdquo; or &ldquo;.Js&rdquo;. CommonJS modules have an entry to the __dirname and __filename variables.</li>
+</ol>
+<p>For example, if you have a report named &ldquo;myModule.Mjs,&rdquo; trade it to &ldquo;myModule.Cjs&rdquo; or &ldquo;myModule.Js.&rdquo;</p>
+<ol start="2">
+<li>Use import.Meta.Url:
+If you need to retain the use of ES modules, you could use the import.Meta.Url property to get the current module&rsquo;s URL, which you can then parse to extract the listing path. Here&rsquo;s an example:</li>
+</ol>
+<h3 id="import--fileurltopath--from-url">import { fileURLToPath } from &lsquo;url&rsquo;;</h3>
+<h3 id="import--dirname--from-path">import { dirname } from &lsquo;path&rsquo;;</h3>
+<h3 id="const-__filename--fileurltopathimportmetaurl">const __filename = fileURLToPath(import.meta.url);</h3>
+<h3 id="const-__dirname--dirname__filename">const __dirname = dirname(__filename);</h3>
+<p>// Now, you can use __dirname in your code.</p>
+<h2 id="which-method-should-you-use">Which method should you use?</h2>
+<p>Which technique you use to fix the error message &ldquo;__dirname is not defined in ES module scope&rdquo; relies upon your precise desires. If you are only using the __dirname variable in some places in your code, then you may use the import. Meta.Urlproperty and the route.Dirname() technique.
+If you use the __dirname variable in many places in your code, or in case you want to apply an improved answer, then you can use a 3rd-celebration bundle like commonplace-es.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>The error message &ldquo;__dirname is not described in ES module scope&rdquo; is a commonplace error which could arise while switching from CommonJS modules to ES modules. There are two approaches to fix this mistake: using the import.Meta.Url assets and the direction.Dirname() method, or using a 3rd-birthday celebration package deal like not unusual-es.</p>
+<h2 id="additional-notes">Additional notes</h2>
+<p>If you are using a module bundler like Webpack, you may also use the __dirname variable in ES modules via configuring Webpack to remedy CommonJS modules.</p>
+<p>If you&rsquo;re using TypeScript, you could additionally use the __dirname variable in ES modules by permitting the resolveJsonModule compiler option.</p>
+
+  </div>
+</main>
+
+
+  
+<script type="text/javascript" src="/main.js" defer></script>
+
+
+</body>
+
+</html>
